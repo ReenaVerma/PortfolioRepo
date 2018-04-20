@@ -1,0 +1,39 @@
+body {
+  background-color: white;
+  color: green; }
+
+html {
+  height: 100%; }
+
+header {
+  background-image: url(/assets/images/futuristic_background.jpg);
+  background-size: 100%;
+  position: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%; }
+
+header::after {
+  display: block;
+  position: relative;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), black);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  content: ''; }
+
+h1 {
+  color: #fff; }
+
+p {
+  font-size: 30px;
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
