@@ -1,4 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   background-color: white;
   color: green;
+  width: 100%;
 }
+
+main {
+  // min-height: 100vh; /* make sure wrapper is taller enough */
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  // position:relative;
+  // padding:10px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh; /* make sure wrapper is taller enough */
+  border: solid thin #060;
+  // overflow: hidden; /* Add this */
+}
+
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }

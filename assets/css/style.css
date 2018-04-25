@@ -1,10 +1,55 @@
-body {
-  background-color: white;
-  color: green; }
+* {
+  box-sizing: border-box; }
 
 html {
   height: 100%;
   min-height: 100%; }
+
+body {
+  background-color: white;
+  color: green;
+  width: 100%; }
+
+main {
+  overflow: hidden; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  /* make sure wrapper is taller enough */
+  border: solid thin #060; }
+
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto; }
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto; }
+
+.flex-item:nth-child(3) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto; }
+
+h1 {
+  color: #fff; }
+
+p {
+  font-size: 30px;
+  color: #fff; }
+
+nav ul li {
+  display: inline;
+  color: #fff; }
 
 header {
   background-image: url(/assets/images/futuristic_background.jpg);
@@ -17,28 +62,15 @@ header {
   z-index: -1;
   /* Preserve aspet ratio */
   min-width: 110%;
-  min-height: 110%; }
+  min-height: 500px; }
 
-header::after {
-  display: block;
-  position: relative;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.4), black);
-  height: 100%;
+article {
+  background-color: #1d1d1d;
+  margin-top: 20px;
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  position: fixed;
-  content: ''; }
-
-h1 {
-  color: #fff; }
-
-p {
-  font-size: 30px;
-  color: #fff; }
-
-nav ul li {
-  display: inline; }
+  height: 200px;
+  border: 1px solid orange; }
+  article.red {
+    background-color: red; }
 
 /*# sourceMappingURL=style.css.map */

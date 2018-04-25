@@ -2,8 +2,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
   const header = document.getElementById('header');
-  const windowWidth = window.innerWidth / 8;
-  const windowHeight = window.innerHeight / 8 ;
+  const windowWidth = window.innerWidth / 5;
+  const windowHeight = window.innerHeight / 5 ;
 
   header.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX / windowWidth;
