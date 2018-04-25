@@ -1,4 +1,11 @@
-nav ul li {
-  display: inline;
-  color: #fff;
+nav {
+  background-color: #1d1d1d;
+  height: 80px;
+  margin-top: 0px;
+
+    ul li {
+    margin: 0px;
+    display: inline;
+    color: #fff;
+  }
 }

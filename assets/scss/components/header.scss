@@ -4,19 +4,19 @@ header {
   background-image: url(/assets/images/futuristic_background.jpg);
   background-position: center;
   background-size: 100%;
-  position: absolute;
+  // position: absolute;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
-  z-index: -1;
+  // z-index: -1;
   /* Preserve aspet ratio */
-  min-width: 110%;
+  min-width: 105%;
   min-height: 500px;
   // display: block;
 }
 
 // header::after {
-//   display: block;
+//   // display: block;
 //   position: inherit;
 //   // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
 //   background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
