@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400|Share+Tech+Mono");
 * {
   box-sizing: border-box; }
 
@@ -16,7 +17,11 @@ body {
   background-color: white;
   color: green;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace; }
+
+main {
+  overflow: hidden; }
 
 .flex-grid {
   display: flex;
@@ -31,36 +36,50 @@ body {
   border: 1px solid orange;
   padding: 20px; }
 
+.title-box {
+  border: 1px solid white;
+  width: 300px;
+  margin: 0 auto;
+  overflow: visible; }
+
 h1, h2 {
-  color: #fff; }
+  color: #fff;
+  font-weight: lighter; }
 
 p {
   font-size: 30px;
   color: #fff; }
 
-.title-box {
-  border: 1px solid white;
-  margin: 0 auto; }
-
-nav {
-  background-color: #1d1d1d;
+nav ul {
+  background-color: white;
   height: 80px;
-  margin-top: 0px; }
+  margin: 0px;
+  border: yellow 1px solid;
+  padding: 30px 20px 0px 20px;
+  text-align: right; }
   nav ul li {
     margin: 0px;
     display: inline;
-    color: #fff; }
+    color: #000;
+    text-align: left; }
 
 header {
-  background-image: url(/assets/images/futuristic_background.jpg);
+  height: 550px;
+  overflow: hidden; }
+
+.header-image {
+  background-image: url(https://orig00.deviantart.net/96da/f/2015/202/3/2/red_city_by_kirokaze-d927ec2.png);
   background-position: center;
   background-size: 100%;
+  position: inherit;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   /* Preserve aspet ratio */
   min-width: 105%;
-  min-height: 500px; }
+  min-height: 580px;
+  overflow: auto;
+  margin: 0 auto; }
 
 article {
   background-color: #1d1d1d;

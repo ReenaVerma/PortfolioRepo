@@ -16,12 +16,14 @@ body {
   color: green;
   width: 100%;
   margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+  // font-family: 'Open Sans', sans-serif;
 }
 
-// main {
-//   // min-height: 100vh; /* make sure wrapper is taller enough */
-//   overflow: hidden;
-// }
+main {
+  // min-height: 100vh; /* make sure wrapper is taller enough */
+  overflow: hidden;
+}
 
 // .container {
 //   display: flex;
@@ -64,4 +66,13 @@ body {
   height: 300px;
   border: 1px solid orange;
   padding: 20px;
+}
+
+.title-box {
+  border: 1px solid white;
+  width: 300px;
+  margin: 0 auto;
+  overflow: visible;
+
+
 }

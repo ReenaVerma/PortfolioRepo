@@ -1,11 +1,15 @@
-nav {
-  background-color: #1d1d1d;
+nav ul {
+  background-color: white;
   height: 80px;
-  margin-top: 0px;
+  margin: 0px;
+  border: yellow 1px solid;
+  padding: 30px 20px 0px 20px;
+  text-align: right;
 
-    ul li {
+   li {
     margin: 0px;
     display: inline;
-    color: #fff;
+    color: #000;
+    text-align: left;
   }
 }
