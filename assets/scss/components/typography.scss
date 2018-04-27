@@ -1,33 +1,42 @@
-h1, h2 {
+h1 {
   color: #fff;
   font-weight: lighter;
+  text-align: left;
+
+  &:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 0.5s linear infinite alternate;
+  }
 }
 
-h1:after {
-  content: '';
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  opacity: 0;
-  display: inline-block;
-  animation: blink 0.5s linear infinite alternate;
+h2 {
+  color: #fff;
+  font-weight: lighter;
+  text-align: left;
+  text-align: center;
+
+  span {
+    font-size: 100px;
+    color: #ccc;
+    line-height: 0.5;
+  }
 }
+
 
 @keyframes blink {
-  0% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
-
 p {
-  font-size: 30px;
-  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #ccc;
+  text-align: center;
 }

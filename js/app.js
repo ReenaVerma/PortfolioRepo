@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //typing header variables
   const message = 'reena verma <br> front-end developer';
-  const messageTwo = '01: science fiction fan';
+  const messageTwo = 'science fiction fan';
 
 
   // TYPING H1 TITLE FUNCTION

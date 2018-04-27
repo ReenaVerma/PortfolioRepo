@@ -1,25 +1,28 @@
 nav ul {
-  background-color: white;
+  background-color: #1d1d1d;
   height: 80px;
   margin: 0px;
-  border: yellow 1px solid;
+  border: yellow 0px solid;
   padding: 30px 20px 0px 20px;
   text-align: right;
 
      li {
       margin: 0px;
       display: inline;
-      color: #000;
+      color: #fff;
       text-align: left;
+      letter-spacing: 0px;
+      margin-left: 15px; 
     }
 
     a {
       position: relative;
-      color: #000;
+      color: #fff;
       text-decoration: none;
+      // word-spacing: 10px;
 
       &:hover {
-        color: #000;
+        color: #fff;
       }
 
       &:before {
@@ -29,7 +32,7 @@ nav ul {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #000;
+        background-color: #fff;
         visibility: hidden;
         transition-property: left, right;
         -webkit-transform: scaleX(0);

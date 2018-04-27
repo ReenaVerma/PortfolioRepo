@@ -25,6 +25,20 @@ main {
   overflow: hidden;
 }
 
+.container {
+  padding: 20px;
+}
+
+.section-white {
+  padding: 0px;
+  background-color: white;
+}
+
+.section-grey {
+  padding: 0px;
+  background-color: #e4e4e4;
+}
+
 // .container {
 //   display: flex;
 //   flex-direction: column;
@@ -56,33 +70,92 @@ main {
 
 .flex-grid {
   display: flex;
-  margin-top: -50;
+   align-items: center;
+   justify-content: center;
+   /* You can set flex-wrap and
+      flex-direction individually */
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* Or do it all in one line
+     with flex flow */
+   flex-flow: row wrap;
+   /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch */
+      align-content: flex-end;
+      margin-top: 0;
 
     .col-grey {
       flex: 1;
       background-color: #1d1d1d;
-      margin-top: 0px;
+      margin: 5px;
       width: 100%;
       height: 300px;
       border: 1px solid orange;
       padding: 20px;
     }
+
+    .col-grey-small {
+      flex: 0.8 0 0;
+      background-color: #1d1d1d;
+      margin-top: 0px;
+      width: 100%;
+      height: 300px;
+      border: 1px solid orange;
+      padding: 40px;
+    }
+
+    .col-grey-big {
+      flex: 2 0 0;
+      background-color: #1d1d1d;
+      margin-top: 0px;
+      width: 100%;
+      height: 300px;
+      border: 1px solid orange;
+      padding: 40px;
+    }
+
 
     .col-white {
       flex: 1;
       background-color: #fff;
       margin-top: 0px;
       width: 100%;
+      height: 100%;
+      border: 1px solid orange;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .col-white-small {
+      flex: 0.5 0 0;
+      background-color: #fff;
+      margin-top: 0px;
+      width: 100px;
       height: 300px;
       border: 1px solid orange;
-      padding: 20px;
+      padding: 40px;
+    }
+
+    .col-white-big {
+      flex: 2 0 0;
+      background-color: #fff;
+      margin-top: 0px;
+      width: 100%;
+      height: 300px;
+      border: 1px solid orange;
+      padding: 40px;
     }
 
 }
 
 .title-box {
   border: 0px solid grey;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   position: absolute;
   top: 30%;
@@ -90,7 +163,7 @@ main {
   z-index: 1;
 
   h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1;
   }
 

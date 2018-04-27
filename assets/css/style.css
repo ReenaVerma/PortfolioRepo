@@ -23,53 +23,124 @@ body {
 main {
   overflow: hidden; }
 
+.container {
+  padding: 20px; }
+
+.section-white {
+  padding: 0px;
+  background-color: white; }
+
+.section-grey {
+  padding: 0px;
+  background-color: #e4e4e4; }
+
 .flex-grid {
   display: flex;
-  margin-top: -50; }
+  align-items: center;
+  justify-content: center;
+  /* You can set flex-wrap and
+     flex-direction individually */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Or do it all in one line
+    with flex flow */
+  flex-flow: row wrap;
+  /* tweak where items line
+     up on the row
+     valid values are: flex-start,
+     flex-end, space-between,
+     space-around, stretch */
+  align-content: flex-end;
+  margin-top: 0; }
   .flex-grid .col-grey {
     flex: 1;
+    background-color: #1d1d1d;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid orange;
+    padding: 20px; }
+  .flex-grid .col-grey-small {
+    flex: 0.8 0 0;
     background-color: #1d1d1d;
     margin-top: 0px;
     width: 100%;
     height: 300px;
     border: 1px solid orange;
-    padding: 20px; }
+    padding: 40px; }
+  .flex-grid .col-grey-big {
+    flex: 2 0 0;
+    background-color: #1d1d1d;
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid orange;
+    padding: 40px; }
   .flex-grid .col-white {
     flex: 1;
     background-color: #fff;
     margin-top: 0px;
     width: 100%;
+    height: 100%;
+    border: 1px solid orange;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .flex-grid .col-white-small {
+    flex: 0.5 0 0;
+    background-color: #fff;
+    margin-top: 0px;
+    width: 100px;
     height: 300px;
     border: 1px solid orange;
-    padding: 20px; }
+    padding: 40px; }
+  .flex-grid .col-white-big {
+    flex: 2 0 0;
+    background-color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid orange;
+    padding: 40px; }
 
 .title-box {
   border: 0px solid grey;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   position: absolute;
   top: 30%;
   left: 35%;
   z-index: 1; }
   .title-box h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1; }
   .title-box h2 {
     font-size: 20px;
     line-height: 0.5; }
 
-h1, h2 {
+h1 {
   color: #fff;
-  font-weight: lighter; }
+  font-weight: lighter;
+  text-align: left; }
+  h1:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 0.5s linear infinite alternate; }
 
-h1:after {
-  content: '';
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  opacity: 0;
-  display: inline-block;
-  animation: blink 0.5s linear infinite alternate; }
+h2 {
+  color: #fff;
+  font-weight: lighter;
+  text-align: left;
+  text-align: center; }
+  h2 span {
+    font-size: 100px;
+    color: #ccc;
+    line-height: 0.5; }
 
 @keyframes blink {
   0% {
@@ -79,27 +150,31 @@ h1:after {
   100% {
     opacity: 1; } }
 p {
-  font-size: 30px;
-  color: #fff; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #ccc;
+  text-align: center; }
 
 nav ul {
-  background-color: white;
+  background-color: #1d1d1d;
   height: 80px;
   margin: 0px;
-  border: yellow 1px solid;
+  border: yellow 0px solid;
   padding: 30px 20px 0px 20px;
   text-align: right; }
   nav ul li {
     margin: 0px;
     display: inline;
-    color: #000;
-    text-align: left; }
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-left: 15px; }
   nav ul a {
     position: relative;
-    color: #000;
+    color: #fff;
     text-decoration: none; }
     nav ul a:hover {
-      color: #000; }
+      color: #fff; }
     nav ul a:before {
       content: "";
       position: absolute;
@@ -107,7 +182,7 @@ nav ul {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000;
+      background-color: #fff;
       visibility: hidden;
       transition-property: left, right;
       -webkit-transform: scaleX(0);
@@ -120,7 +195,7 @@ nav ul {
       transform: scaleX(1); }
 
 header {
-  height: 550px;
+  height: 700px;
   overflow: hidden; }
 
 .header-image {
@@ -133,8 +208,9 @@ header {
   left: 0;
   /* Preserve aspet ratio */
   min-width: 105%;
-  min-height: 580px;
-  margin: 0 auto; }
+  min-height: 700px;
+  margin: 0 auto;
+  display: block; }
 
 article {
   background-color: #1d1d1d;
