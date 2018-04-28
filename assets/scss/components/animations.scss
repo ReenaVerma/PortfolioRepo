@@ -1,0 +1,10 @@
+.line {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #ccc;
+    width: 150px;
+    left: -300px;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,10 @@
+$radius-rounded: 290486px;
+
+.image {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: $radius-rounded;
+}

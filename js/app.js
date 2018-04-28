@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-  //background animation
-
+  //HEADER BACKGROUND ANIMATION
   const header = document.getElementById('header');
   const windowWidth = window.innerWidth / 5;
   const windowHeight = window.innerHeight / 5 ;
@@ -14,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  //typing header variables
+  //TYPING FONT AFFECT FUNCTION
   const message = 'reena verma <br> front-end developer';
   const messageTwo = 'science fiction fan';
 
@@ -60,6 +59,10 @@ window.addEventListener('DOMContentLoaded', () => {
   title();
   subTitle();
 
+  $(window).on('scroll',function(){
+    const trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+    $('.line').css('transform','translateX('+(trainPosition-30)+'%)');
+  });
 
 
 

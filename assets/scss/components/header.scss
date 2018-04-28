@@ -5,10 +5,11 @@ header {
 }
 
 .header-image {
-  background-image: url(https://orig00.deviantart.net/96da/f/2015/202/3/2/red_city_by_kirokaze-d927ec2.png);
+  // background-image: url(https://orig00.deviantart.net/96da/f/2015/202/3/2/red_city_by_kirokaze-d927ec2.png);
   // background-image: url(/assets/images/futuristic_background.jpg);
   // background-image: url(https://i.pinimg.com/originals/28/96/65/289665783d076dc8be9b9d58c0528884.jpg);
   // background-image: url(https://s-media-cache-ak0.pinimg.com/originals/46/48/85/4648858f4ff09147f00466dc9de94bbb.jpg);
+  background-image: url(https://i.pinimg.com/originals/a0/68/9a/a0689ae227c65817ffacc1f334312130.jpg);
   background-position: center;
   background-size: 100%;
   position: inherit;
@@ -19,10 +20,21 @@ header {
   /* Preserve aspet ratio */
   min-width: 105%;
   min-height: 700px;
-
   margin: 0 auto;
   display: block;
 }
+
+
+
+//
+// #trainMotion img {
+//     transform: translate(-50%, 0%);
+// }
+//
+// #trainMotion.choochoo img {
+//     transition: all 0.9s ease-out;
+//     transform: translate(0%, 0%);
+// }
 
 // .header-image::after {
 //   // display: block;
