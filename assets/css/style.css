@@ -73,6 +73,15 @@ main {
     padding-right: 10%;
     padding-top: 40px;
     padding-bottom: 40px; }
+  .flex-grid .col-white-small {
+    flex: 0.3 0 0;
+    background-color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    border: 0px solid orange;
+    padding: 0px 20px 0px 20px; }
+    .flex-grid .col-white-small p {
+      text-align: justify; }
   .flex-grid.col-portfolio {
     flex: 1;
     background-color: #fff;
@@ -97,7 +106,7 @@ main {
 h1 {
   color: #fff;
   font-weight: lighter;
-  text-align: left; }
+  text-align: center; }
   h1:after {
     content: '';
     width: 20px;
@@ -117,12 +126,11 @@ h2 {
     line-height: 0.5; }
 
 .title-box {
-  border: 0px solid grey;
+  border: 1px solid grey;
   width: 600px;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   top: 30%;
-  left: 35%;
   z-index: 1; }
   .title-box h1 {
     font-size: 55px;
@@ -171,7 +179,7 @@ nav ul {
   padding: 30px 20px 0px 20px;
   text-align: right;
   position: fixed;
-  z-index: 1; }
+  z-index: 2; }
   nav ul li {
     margin: 0px;
     display: inline;
@@ -205,20 +213,20 @@ nav ul {
       transform: scaleX(1); }
 
 header {
-  height: 700px;
+  height: 100vh;
   overflow: hidden; }
 
 .header-image {
   background-image: url(https://i.pinimg.com/originals/a0/68/9a/a0689ae227c65817ffacc1f334312130.jpg);
   background-position: center;
   background-size: 100%;
-  position: inherit;
+  position: absolute;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   /* Preserve aspet ratio */
   min-width: 105%;
-  min-height: 700px;
+  height: 100%;
   margin: 0 auto;
   display: block; }
 

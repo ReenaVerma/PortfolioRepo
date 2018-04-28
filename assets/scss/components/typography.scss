@@ -1,7 +1,7 @@
 h1 {
   color: #fff;
   font-weight: lighter;
-  text-align: left;
+  text-align: center;
 
   &:after {
     content: '';
@@ -27,13 +27,15 @@ h2 {
 }
 
 .title-box {
-  border: 0px solid grey;
+  border: 1px solid grey;
   width: 600px;
+  // height: 400px;
   margin: 0 auto;
-  position: absolute;
+  position:  relative;
   top: 30%;
-  left: 35%;
+  // left: 35%;
   z-index: 1;
+
 
   h1 {
     font-size: 55px;

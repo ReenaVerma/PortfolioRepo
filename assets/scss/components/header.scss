@@ -1,6 +1,6 @@
 
 header {
-  height: 700px;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -12,14 +12,14 @@ header {
   background-image: url(https://i.pinimg.com/originals/a0/68/9a/a0689ae227c65817ffacc1f334312130.jpg);
   background-position: center;
   background-size: 100%;
-  position: inherit;
+  position: absolute;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   // z-index: -1;
   /* Preserve aspet ratio */
   min-width: 105%;
-  min-height: 700px;
+  height: 100%;
   margin: 0 auto;
   display: block;
 }
