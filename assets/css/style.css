@@ -225,7 +225,7 @@ header {
   top: 0;
   left: 0;
   /* Preserve aspet ratio */
-  min-width: 105%;
+  min-width: 106%;
   height: 100%;
   margin: 0 auto;
   display: block; }
