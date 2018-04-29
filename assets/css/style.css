@@ -230,7 +230,7 @@ header {
   overflow: none; }
 
 .header-image {
-  background-image: url(https://78.media.tumblr.com/355b50dcc66d751115f40afb0ee1b06c/tumblr_p4s23oxTpy1uzaoxdo1_1280.gif);
+  background-image: url(/assets/images/futuristic_background.jpg);
   background-position: center;
   background-size: 100%;
   position: absolute;
