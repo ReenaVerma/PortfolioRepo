@@ -80,26 +80,24 @@ main {
     width: 100%;
     border: 0px solid orange;
     padding: 0px 20px 0px 20px; }
-    .flex-grid .col-white-small p {
-      text-align: justify; }
-  .flex-grid.col-portfolio {
+  .flex-grid .col-portfolio {
     flex: 1;
     background-color: #fff;
-    margin-top: 0px;
-    width: 40%;
-    height: 300px;
-    border: 0px solid orange;
-    padding: 40px; }
-    .flex-grid.col-portfolio.card {
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 20px; }
+    .flex-grid .col-portfolio.card {
       background-color: black;
       box-shadow: #e4e4e4;
       color: white;
       max-width: 100%;
       position: relative; }
-    .flex-grid.col-portfolio.card-content {
+    .flex-grid .col-portfolio.card-content {
       background-color: white;
       padding: 1.5rem; }
-    .flex-grid.col-portfolio.card-image {
+    .flex-grid .col-portfolio.card-image {
       display: block;
       position: relative; }
 
@@ -126,7 +124,7 @@ h2 {
     line-height: 0.5; }
 
 .title-box {
-  border: 1px solid grey;
+  border: 0px solid grey;
   width: 600px;
   margin: 0 auto;
   position: relative;
@@ -150,7 +148,8 @@ p {
   font-family: 'Share Tech Mono', monospace;
   font-size: 17px;
   color: #ccc;
-  text-align: center; }
+  text-align: center;
+  text-align: justify; }
 
 .caps {
   text-transform: uppercase;
@@ -160,19 +159,32 @@ p {
   padding: 0;
   color: #666; }
 
+.fas {
+  color: #666; }
+
 .line {
   display: block;
   position: relative;
   margin: 0 auto;
+  top: 10px;
   height: 3px;
   background-color: #ccc;
-  width: 150px;
-  left: -300px;
-  transform: translateX(-50%); }
+  width: 100px;
+  right: 20%; }
+
+.line1 {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: -20px;
+  height: 3px;
+  background-color: #ccc;
+  width: 100px;
+  left: 20%; }
 
 nav ul {
   width: 100%;
-  background-color: #1d1d1d;
+  background-color: #fff;
   height: 80px;
   margin: 0px;
   border: yellow 0px solid;
@@ -189,10 +201,10 @@ nav ul {
     margin-left: 15px; }
   nav ul a {
     position: relative;
-    color: #fff;
+    color: #17121F;
     text-decoration: none; }
     nav ul a:hover {
-      color: #fff; }
+      color: #17121F; }
     nav ul a:before {
       content: "";
       position: absolute;
@@ -200,7 +212,7 @@ nav ul {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #fff;
+      background-color: #17121F;
       visibility: hidden;
       transition-property: left, right;
       -webkit-transform: scaleX(0);
@@ -213,22 +225,25 @@ nav ul {
       transform: scaleX(1); }
 
 header {
-  height: 100vh;
-  overflow: hidden; }
+  height: 650px;
+  width: 100%;
+  overflow: none; }
 
 .header-image {
-  background-image: url(https://i.pinimg.com/originals/a0/68/9a/a0689ae227c65817ffacc1f334312130.jpg);
+  background-image: url(https://78.media.tumblr.com/355b50dcc66d751115f40afb0ee1b06c/tumblr_p4s23oxTpy1uzaoxdo1_1280.gif);
   background-position: center;
   background-size: 100%;
   position: absolute;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
+  z-index: 0;
   /* Preserve aspet ratio */
-  min-width: 106%;
-  height: 100%;
+  width: 106%;
+  min-height: 100%;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  overflow: hidden; }
 
 .image {
   display: block;

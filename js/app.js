@@ -60,8 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
   subTitle();
 
   $(window).on('scroll',function(){
-    const trainPosition = Math.round($(window).scrollTop() / $(window).height() * 100);
-    $('.line').css('transform','translateX('+(trainPosition-30)+'%)');
+    const linePosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+    $('.line').css('transform','translateX('+(linePosition-80)+'%)');
   });
 
 

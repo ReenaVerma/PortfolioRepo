@@ -2,9 +2,26 @@
     display: block;
     position: relative;
     margin: 0 auto;
+    top: 10px;
     height: 3px;
     background-color: #ccc;
-    width: 150px;
-    left: -300px;
-    transform: translateX(-50%);
+    width: 100px;
+    right: 20%;
+    // transform:translateX(100px);
+    // -ms-transform: translateX(-30%); /* IE 9 */
+    // -webkit-transform: translateX(-30%); /* Safari 3-8 */
+}
+
+.line1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+    height: 3px;
+    background-color: #ccc;
+    width: 100px;
+    left: 20%;
+    // transform:translateX(-100px);
+    // -ms-transform: translateX(-30%); /* IE 9 */
+    // -webkit-transform: translateX(-30%); /* Safari 3-8 */
 }

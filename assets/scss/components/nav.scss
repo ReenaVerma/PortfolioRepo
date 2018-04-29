@@ -1,6 +1,6 @@
 nav ul {
   width: 100%;
-  background-color: #1d1d1d;
+  background-color: #fff;
   height: 80px;
   margin: 0px;
   border: yellow 0px solid;
@@ -20,12 +20,12 @@ nav ul {
 
     a {
       position: relative;
-      color: #fff;
+      color: #17121F;
       text-decoration: none;
       // word-spacing: 10px;
 
       &:hover {
-        color: #fff;
+        color: #17121F;
       }
 
       &:before {
@@ -35,7 +35,7 @@ nav ul {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #fff;
+        background-color: #17121F;
         visibility: hidden;
         transition-property: left, right;
         -webkit-transform: scaleX(0);
