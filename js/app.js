@@ -59,10 +59,10 @@ window.addEventListener('DOMContentLoaded', () => {
   title();
   subTitle();
 
-  $(window).on('scroll',function(){
-    const linePosition = Math.round($(window).scrollTop() / $(window).height() * 100);
-    $('.line').css('transform','translateX('+(linePosition-80)+'%)');
-  });
+  // $(window).on('scroll',function(){
+  //   const linePosition = Math.round($(window).scrollTop() / $(window).height() * 100);
+  //   $('.line').css('transform','translateX('+(linePosition-80)+'%)');
+  // });
 
 
 
