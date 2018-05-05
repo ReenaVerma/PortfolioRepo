@@ -11,6 +11,8 @@
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600|Share+Tech+Mono');
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
   </head>
 
@@ -19,33 +21,34 @@
       <nav>
         <ul>
           <li><a href="#">about me</a></li>
+          <li><a href="#">dev skills</a></li>
           <li><a href="#">projects</a></li>
-          <li><a href="#">timeline</a></li>
+          <li><a href="#">other skills</a></li>
           <li><a href="#">linkedin</a></li>
           <li><a href="#">github</a></li>
         </ul>
       </nav>
 
-      <!-- Background image and title -->
-          <header>
+      <!-- BACKGROUND HEADER AND TITLE -->
+
+          <header class="mobile-hidden">
             <div class="title-box caps">
               <h1>hello</h1>
               <h2></h2>
             </div>
             <div id="header" class="header-image">
             </div>
-        </header>
+          </header>
 
+
+        <!-- INTRO -->
           <section class="section-white">
             <div class="container">
               <div class="flex-grid">
                 <div class="col-white">
-                  <h2>
-                    <span class="line object"></span>
-                    <span>about reena</span>
-                    <!-- <span class="line1"></span> -->
-
-                  </h2>
+                  <span class="line1"></span>
+                  <h2><span>about reena</span></h2>
+                  <span class="line2"></span>
                   <div><img class="image" src="/assets/images/reena_bw.jpg" /></div>
                 </div>
                 <div class="flex-grid">
@@ -60,10 +63,14 @@
             </div>
           </section>
 
+          <!-- DEV SKILLS -->
           <section class="section-grey">
             <div class="container">
-              <h2><span>web development skills</span>
-                <div class="line"></div>
+
+              <h2>
+                <span class="line3"></span>
+                <span>web development skills</span>
+                <span class="line4"></span>
               </h2>
               <div class="flex-grid">
                 <div class="col-grey">
@@ -79,6 +86,7 @@
                       <li>CSS in JavaScript</li>
                       <li>Bulma/Bootstrap</li>
                       <li>DOM Manipulation</li>
+                      <li>CodeKit</li>
                     </ul>
                 </div>
                 <div class="col-grey">
@@ -87,7 +95,7 @@
                   <ul class="caps">
                     <li>Node.js</li>
                     <li>MongoDB/Mongoose</li>
-                    <li>Express Views/EJS</li>
+                    <li>Express.js</li>
                     <li>API Integration</li>
                     <li>User Authentication</li>
                     <li>RESTful Routing</li>
@@ -112,70 +120,102 @@
 
         <section class="section-white">
           <div class="container">
-            <h2><span>portfolio</span>
-              <div class="line"></div>
+
+            <h2>
+              <span class="line5"></span>
+              <span>portfolio</span>
+              <div class="line6"></div>
             </h2>
             <div class="flex-grid">
               <div class="col-portfolio">
                 <div class="card">
                     <div class="card-image">
-                      <img src="https://www.fillmurray.com/300/200" />
+                      <img class="portfolio-image" src="/assets/images/hit_me_up_shot.jpg" />
                     </div>
                 </div>
                 <div class="card-content">
                   <h3>project 4: hit me up</h3>
-                  <h3 class="tech">tech: MERN stack - MongoDB, Express, ReactJS, Node.js, SASS/SCSS, Bulma, Google APIs, Zomato API, JWT token, Mocha, Chai, NYC</h3>
+                  <h3 class="tech">tech: MERN stack - MongoDB, Express.js, ReactJS, Node.js, SASS/SCSS, Bulma, Google APIs, Zomato API, JWT token</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app</a>
+                  <p><a href="#">launch app ></a></p>
                 </div>
               </div>
 
               <div class="col-portfolio">
                 <div class="card">
                     <div class="card-image">
-                      <img src="https://www.fillmurray.com/300/200" />
+                      <img class="portfolio-image" src="/assets/images/crave_shot.jpg" />
                     </div>
                 </div>
                 <div class="card-content">
                   <h3>project 3: crave</h3>
-                  <h3 class="tech">tech: MEAN stack - MongoDB, Express, AngularJS, Node.js, Google APIs (Places, Servce, Directions), Bulma</h3>
+                  <h3 class="tech">tech: MEAN stack - MongoDB, Express.js, AngularJS, Node.js, Google APIs (Places, Servce, Directions), Bulma</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app</a>
+                  <p><a href="#">launch app ></a></p>
+                </div>
+              </div>
+
+              <div class="col-portfolio">
+                <div class="card">
+                    <div class="card-image">
+                      <img class="portfolio-image" src="/assets/images/pop_up_shot.jpg" />
+                    </div>
+                </div>
+                <div class="card-content">
+                  <h3>project 2: popup london</h3>
+                  <h3 class="tech">tech: Express.js, MongoDB, Node.js, Bcrypt, Flash Messages, Google Maps API, FileStack API</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                  <p><a href="#">launch app ></a></p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- SECOND ROW -->
         <section class="section-white">
           <div class="container">
             <div class="flex-grid">
-
               <div class="col-portfolio">
                 <div class="card">
                     <div class="card-image">
-                      <img src="https://www.fillmurray.com/300/200" />
-                    </div>
-                </div>
-                <div class="card-content">
-                  <h3>project 2: popup london</h3>
-                  <h3 class="tech">tech: Express, MongoDB, Node.js, Bcrypt, Flash Messages, Google Maps API, FileStack API</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app</a>
-                </div>
-              </div>
-
-              <div class="col-portfolio">
-                <div class="card">
-                    <div class="card-image">
-                      <img src="https://www.fillmurray.com/300/200" />
+                      <img class="portfolio-image" src="/assets/images/quiz_shot.jpg" />
                     </div>
                 </div>
                 <div class="card-content">
                   <h3>project 1: sci-fi movie quiz</h3>
                   <h3 class="tech">tech: Javascript, jQuery, Bulma</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app</a>
+                  <p>My first project at General Assembly, where I was required to build a game using JavaScript fundamentals I had learned over the last two weeks.  I decided to pick a theme personal to me - sci-fi movies!  Built using vanilla JavaScript and jQuery, the user is presented with a jumbled array of images and has to guess as many movies as possible within 60 seconds.</p>
+
+                  <p>The game also incoporates sound clips, which the user and replay for hints in each around.  And a score boards, which increments by 1 point, every time the user guesses correctly.
+                  <p><a href="#">launch app ></a></p>
+                </div>
+              </div>
+
+              <div class="col-portfolio mobile-hidden">
+                <div class="card">
+                    <div class="card-image">
+                      <img class="portfolio-image" src="https://bulma.io/images/placeholders/600x480.png" />
+                    </div>
+                </div>
+                <div class="card-content">
+                  <h3>next project: job board in react</h3>
+                  <h3 class="tech">tech: </h3>
+                  <p>coming soon...</p>
+                </div>
+              </div>
+
+              <div class="col-portfolio mobile-hidden">
+                <div class="card">
+                    <div class="card-image">
+                      <img class="portfolio-image" src="https://bulma.io/images/placeholders/600x480.png" />
+                    </div>
+                </div>
+                <div class="card-content">
+                  <h3>next project: react native project</h3>
+                  <h3 class="tech">tech: </h3>
+                  <p>coming soon...</p>
+
                 </div>
               </div>
             </div>
@@ -183,13 +223,67 @@
         </section>
 
 
-          <div class="flex-grid">
-            <div class="col-white">
-              <h2>timeline</h2>
+        <!-- OTHER SKILLS -->
+        <section class="section-grey">
+          <div class="container">
+            <h2>
+              <span class="line7"></span>
+              <span>other skills</span>
+              <span class="line8"></span>
+            </h2>
+            <div class="flex-grid">
+              <div class="col-grey">
+                <p style="text-align: center;"><i class="fas fa-code fa-2x"></i></p>
+                <h2>digital</h2>
+                  <ul class="caps">
+                    <li>Website Production</li>
+                    <li>Content Migrations</li>
+                    <li>SEO</li>
+                    <li>Converstion Rate Optimisation</li>
+                    <li>Translations</li>
+                    <li>Website Ops/Escalaltions</li>
+                  </ul>
+              </div>
+              <div class="col-grey">
+                <p style="text-align: center;"><i class="fas fa-code fa-2x"></i></p>
+                <h2>cms systems</h2>
+                <ul class="caps">
+                  <li>AEM / Adobe CQ5</li>
+                  <li>Sitecore V7 +</li>
+                  <li>Typo 3</li>
+                  <li>Tridion SDL</li>
+                  <li>MeWe / Sharepoint </li>
+                  <li>WordPress</li>
+
+                  </p>
+                </ul>
+              </div>
+              <div class="col-grey">
+                <p style="text-align: center;"><i class="fas fa-code fa-2x"></i></p>
+                <h2>other</h2>
+                <ul class="caps">
+                  <li>Agile</li>
+                  <li>Line Management</li>
+                  <li>Mentoring <a href="http://livity.co.uk" target="_blank">Livity Apprentices</a></li>
+                  <li>CMC/Aviation Emergency Response Support</li>
+                  </ul>
+              </div>
+              <div class="col-grey">
+                <p style="text-align: center;"><i class="fas fa-code fa-2x"></i></p>
+                <h2>education</h2>
+                <ul class="caps">
+                  <li>General Assembly WDI 2018</li>
+                   <li>Birkbeck University of London</li>
+                  <em>(Dip. Web Design & Development)</em>
+                  <li>Canterbury Christ Church University</li>
+                  <em>BA Hons Marketing
+                  with Business Studies)</em>
+
+                  </ul>
+              </div>
             </div>
-          </div>
-
-
+        </div>
+      </section>
 
 
     <main>

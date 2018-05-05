@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //HEADER BACKGROUND ANIMATION
   const header = document.getElementById('header');
-  const windowWidth = window.innerWidth / 5;
+  const windowWidth = window.innerWidth / 0;
   const windowHeight = window.innerHeight / 5 ;
 
   header.addEventListener('mousemove', (e) => {
@@ -58,6 +58,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   title();
   subTitle();
+
+  // TITLE LINE SLIDE IN ANIMATION
+
+  // $(function() {
+  // AOS.init({
+  //   duration: 1200,
+  //   easing: 'ease-in-out-back'
+  // });
 
   // $(window).on('scroll',function(){
   //   const linePosition = Math.round($(window).scrollTop() / $(window).height() * 100);

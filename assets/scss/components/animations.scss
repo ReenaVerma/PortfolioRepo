@@ -1,27 +1,96 @@
-.line {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    top: 10px;
-    height: 3px;
-    background-color: #ccc;
-    width: 100px;
-    right: 20%;
-    // transform:translateX(100px);
-    // -ms-transform: translateX(-30%); /* IE 9 */
-    // -webkit-transform: translateX(-30%); /* Safari 3-8 */
+@mixin center-v () {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .line1 {
     display: block;
     position: relative;
     margin: 0 auto;
-    top: -20px;
-    height: 3px;
+    top: 35px;
+    height: 1px;
     background-color: #ccc;
-    width: 100px;
-    left: 20%;
-    // transform:translateX(-100px);
-    // -ms-transform: translateX(-30%); /* IE 9 */
-    // -webkit-transform: translateX(-30%); /* Safari 3-8 */
+    width: 50px;
+    right: 130px;
+}
+
+.line2 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -35px;
+    height: 1px;
+    background-color: #ccc;
+    width: 50px;
+    left: 130px;
+}
+
+
+.line3 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+    height: 1px;
+    background-color: #666;
+    width: 50px;
+    right: 210px;
+}
+
+.line4 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -15px;
+    height: 1px;
+    background-color: #666;
+    width: 50px;
+    left: 210px;
+}
+
+.line5 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+    height: 1px;
+    background-color: #ccc;
+    width: 50px;
+    right: 140px;
+}
+
+.line6 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -15px;
+    height: 1px;
+    background-color: #ccc;
+    width: 50px;
+    left: 140px;
+}
+
+
+.line7 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+    height: 1px;
+    background-color: #666;
+    width: 50px;
+    right: 140px;
+}
+
+.line8 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: -15px;
+    height: 1px;
+    background-color: #666;
+    width: 50px;
+    left: 140px;
 }

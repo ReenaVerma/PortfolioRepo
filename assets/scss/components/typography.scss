@@ -1,13 +1,15 @@
 h1 {
-  color: #fff;
+  color: #e4e4e4;
   font-weight: lighter;
+  font-size: 55px;
   text-align: center;
+  text-transform: lowercase;
 
   &:after {
-    content: '';
+    content: ' ';
     width: 20px;
-    height: 2px;
-    background: #fff;
+    height: 5px;
+    background: #ccc;
     opacity: 0;
     display: inline-block;
     animation: blink 0.5s linear infinite alternate;
@@ -15,20 +17,27 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #ccc;
   font-weight: lighter;
   text-align: center;
+  text-transform: lowercase;
+
 
   span {
-    font-size: 40px;
-    color: #ccc;
+    font-size: 25px;
+    // color: #ccc;
     line-height: 0.5;
+    border: 0px solid black;
   }
+}
+
+h3 {
+  color: #3F77A2;
 }
 
 .title-box {
   border: 0px solid grey;
-  width: 600px;
+  width: 660px;
   // height: 400px;
   margin: 0 auto;
   position:  relative;
@@ -36,15 +45,10 @@ h2 {
   // left: 35%;
   z-index: 1;
 
-
-  h1 {
-    font-size: 55px;
-    line-height: 1;
-  }
-
   h2 {
       font-size: 20px;
         line-height: 0.5;
+        color: #ccc;
   }
 
 }

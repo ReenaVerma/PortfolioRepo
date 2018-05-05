@@ -8,3 +8,19 @@ $radius-rounded: 290486px;
   margin: 0 auto;
   border-radius: $radius-rounded;
 }
+
+.portfolio-image {
+  display: block;
+  height: auto;
+  width: 100%;
+  // filter: gray; /* IE5+ */
+  // -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  // -webkit-transition: all .4s ease-in-out;
+  //
+    &:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.2);
+      -webkit-transition: all .4s ease-in-out;
+    }
+  }
