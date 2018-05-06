@@ -59,19 +59,22 @@ window.addEventListener('DOMContentLoaded', () => {
   title();
   subTitle();
 
-  // TITLE LINE SLIDE IN ANIMATION
-
-  // $(function() {
-  // AOS.init({
-  //   duration: 1200,
-  //   easing: 'ease-in-out-back'
-  // });
-
-  // $(window).on('scroll',function(){
-  //   const linePosition = Math.round($(window).scrollTop() / $(window).height() * 100);
-  //   $('.line').css('transform','translateX('+(linePosition-80)+'%)');
-  // });
-
+  // SMOOTH SCROLL NAVIGATION
+  $(function() {
+  // Selects verything with the class smoothScroll
+    $('.smoothScroll').click(function() {
+      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000); // Scroll speed in milliseconds
+          return false;
+        }
+      }
+    });
+  });
 
 
 });

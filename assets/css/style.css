@@ -52,18 +52,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* You can set flex-wrap and
-     flex-direction individually */
   flex-direction: row;
   flex-wrap: wrap;
-  /* Or do it all in one line
-    with flex flow */
   flex-flow: row wrap;
-  /* tweak where items line
-     up on the row
-     valid values are: flex-start,
-     flex-end, space-between,
-     space-around, stretch */
   align-content: flex-end;
   margin-top: 0; }
   .flex-grid .col-grey {
@@ -72,6 +63,11 @@ main {
     width: 100%;
     border: 0px solid orange;
     padding: 20px; }
+    .flex-grid .col-grey a {
+      color: #ccc;
+      text-decoration: underline; }
+    .flex-grid .col-grey:hover {
+      color: #E84545; }
   .flex-grid .col-white {
     flex: 1;
     background-color: #fff;
@@ -108,6 +104,26 @@ main {
     .flex-grid .col-portfolio.card-image {
       display: block;
       position: relative; }
+    .flex-grid .col-portfolio a {
+      position: relative;
+      color: #ccc;
+      text-decoration: none; }
+      .flex-grid .col-portfolio a:hover {
+        color: #ccc; }
+      .flex-grid .col-portfolio a:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 100%;
+        bottom: -5px;
+        background: #E84545;
+        height: 2px;
+        transition-property: left right;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-out; }
+      .flex-grid .col-portfolio a:hover:after, .flex-grid .col-portfolio a:focus:after, .flex-grid .col-portfolio a:active:after {
+        right: 0; }
 
 @media only screen and (max-width: 768px) {
   .flex-grid {
@@ -153,7 +169,7 @@ h2 {
     border: 0px solid black; }
 
 h3 {
-  color: #3F77A2; }
+  color: #E84545; }
 
 .title-box {
   border: 0px solid grey;
@@ -274,27 +290,6 @@ p {
   width: 50px;
   left: 140px; }
 
-a {
-  position: relative;
-  color: #ccc;
-  text-decoration: none; }
-  a:hover {
-    color: #ccc; }
-  a:after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 100%;
-    bottom: -5px;
-    background: #E84545;
-    height: 2px;
-    transition-property: left right;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out; }
-  a:hover:after, a:focus:after, a:active:after {
-    right: 0; }
-
 .navBar {
   background-color: #fff;
   position: fixed;
@@ -311,6 +306,12 @@ a {
   margin: 1em 0;
   width: 45px;
   border: grey 0px solid; }
+  .logo:hover {
+    text-decoration: none; }
+  .logo:active {
+    text-decoration: none; }
+  .logo:visited {
+    text-decoration: none; }
 
 .wrapper {
   margin: 0 auto;
@@ -326,11 +327,25 @@ nav ul {
   list-style-type: none;
   width: 100%; }
   nav ul a {
+    position: relative;
     color: #666;
-    text-decoration: none;
-    transition: all .5s ease; }
+    text-decoration: none; }
     nav ul a:hover {
       color: #E84545; }
+    nav ul a:after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 100%;
+      bottom: -5px;
+      background: #E84545;
+      height: 2px;
+      transition-property: left right;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-out; }
+    nav ul a:hover:after, nav ul a:focus:after, nav ul a:active:after {
+      right: 0; }
 nav li {
   display: inline-block;
   margin-right: 25px; }

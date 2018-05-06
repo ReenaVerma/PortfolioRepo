@@ -20,6 +20,10 @@ $color3: #903749; //Maroon
   margin: 1em 0;
   width: 45px;
   border: grey 0px solid;
+
+  &:hover {text-decoration: none;}
+  &:active {text-decoration: none;}
+  &:visited {text-decoration: none;}
 }
 
 // Content Wrapper
@@ -43,11 +47,37 @@ nav {
     // float: right;
 
     a {
+      position: relative;
       color: #666;
       text-decoration: none;
-      transition: all .5s ease;
+      // line-height: inherit;
+      // word-spacing: 10px;
 
-      &:hover {color: #E84545}
+      &:hover {
+        color: #E84545;
+        // text-decoration: none;
+      }
+
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 100%;
+        bottom: -5px;
+        background: #E84545;
+        height: 2px;
+        transition-property: left right;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-out;
+      }
+
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        right: 0;
+      }
     }
   }
 

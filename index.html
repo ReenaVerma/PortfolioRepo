@@ -22,16 +22,16 @@
 
       <nav class="navBar">
         <nav class="wrapper">
-          <div class="logo"></div><!-- Logo -->
+          <a class="smoothScroll" href="#home"><div class="logo"></div></a><!-- Logo -->
           <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="label-toggle"></label>
             <ul>
-              <li><a href="#">about me</a></li>
-              <li><a href="#">dev skills</a></li>
-              <li><a href="#">projects</a></li>
-              <li><a href="#">other skills</a></li>
-              <li><a href="#">linkedin</a></li>
-              <li><a href="#">github</a></li>
+              <li><a class="smoothScroll" href="#about">about me</a></li>
+              <li><a class="smoothScroll" href="#dev">dev skills</a></li>
+              <li><a class="smoothScroll" href="#portfolio">projects</a></li>
+              <li><a class="smoothScroll" href="#other">other skills</a></li>
+              <li><a href="https://www.linkedin.com/in/reenaverma" target="_blank">linkedin</a></li>
+              <li><a href="https://github.com/ReenaVerma" target="_blank">github</a></li>
             </ul>
         </nav>
       </nav>
@@ -50,6 +50,7 @@
 
 
           <!-- MOBILE HEADER -->
+          <div id="home"></div>
           <header>
             <div class="title-box caps">
               <h1></h1>
@@ -69,6 +70,7 @@
 
 
         <!-- INTRO -->
+        <div id="about"></div>
           <section class="section-white">
             <div class="container">
               <div class="flex-grid">
@@ -90,6 +92,7 @@
             </div>
           </section>
 
+          <div id="dev"></div>
           <!-- DEV SKILLS -->
           <section class="section-grey">
             <div class="container">
@@ -145,9 +148,9 @@
           </div>
         </section>
 
+        <div id="portfolio"></div>
         <section class="section-white">
           <div class="container">
-
             <h2>
               <span class="line5"></span>
               <span>portfolio</span>
@@ -164,7 +167,7 @@
                   <h3>project 4: hit me up</h3>
                   <h3 class="tech">tech: MERN stack - MongoDB, Express.js, ReactJS, Node.js, SASS/SCSS, Bulma, Google APIs, Zomato API, JWT token</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app ></a></p>
+                  <p><a href="https://hit-me-up-app.herokuapp.com/" target="_blank">launch app ></a></p>
                 </div>
               </div>
 
@@ -178,7 +181,7 @@
                   <h3>project 3: crave</h3>
                   <h3 class="tech">tech: MEAN stack - MongoDB, Express.js, AngularJS, Node.js, Google APIs (Places, Servce, Directions), Bulma</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app ></a></p>
+                  <p><a href="https://app-crave.herokuapp.com/" target="_blank">launch app ></a></p>
                 </div>
               </div>
 
@@ -192,7 +195,7 @@
                   <h3>project 2: popup london</h3>
                   <h3 class="tech">tech: Express.js, MongoDB, Node.js, Bcrypt, Flash Messages, Google Maps API, FileStack API</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                  <p><a href="#">launch app ></a></p>
+                  <p><a href="https://popupculture.herokuapp.com/" target="_blank">launch app ></a></p>
                 </div>
               </div>
             </div>
@@ -215,14 +218,14 @@
                   <p>My first project at General Assembly, where I was required to build a game using JavaScript fundamentals I had learned over the last two weeks.  I decided to pick a theme personal to me - sci-fi movies!  Built using vanilla JavaScript and jQuery, the user is presented with a jumbled array of images and has to guess as many movies as possible within 60 seconds.</p>
 
                   <p>The game also incoporates sound clips, which the user and replay for hints in each around.  And a score boards, which increments by 1 point, every time the user guesses correctly.
-                  <p><a href="#">launch app ></a></p>
+                  <p><a href="https://sci-quiz.herokuapp.com/" target="_blank">launch app ></a></p>
                 </div>
               </div>
 
               <div class="col-portfolio mobile-hidden">
                 <div class="card">
                     <div class="card-image">
-                      <img class="portfolio-image" src="https://bulma.io/images/placeholders/600x480.png" />
+                      <img class="portfolio-image" src="/assets/images/coming_soon_final.gif" />
                     </div>
                 </div>
                 <div class="card-content">
@@ -235,7 +238,7 @@
               <div class="col-portfolio mobile-hidden">
                 <div class="card">
                     <div class="card-image">
-                      <img class="portfolio-image" src="https://bulma.io/images/placeholders/600x480.png" />
+                      <img class="portfolio-image" src="/assets/images/coming_soon_final.gif" />
                     </div>
                 </div>
                 <div class="card-content">
@@ -250,6 +253,7 @@
         </section>
 
 
+        <div id="other"></div>
         <!-- OTHER SKILLS -->
         <section class="section-grey">
           <div class="container">

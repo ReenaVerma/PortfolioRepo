@@ -57,26 +57,15 @@ main {
   padding-bottom: 40px;
 }
 
-
-
 .flex-grid {
   display: flex;
    align-items: center;
    justify-content: center;
-   /* You can set flex-wrap and
-      flex-direction individually */
    flex-direction: row;
    flex-wrap: wrap;
-   /* Or do it all in one line
-     with flex flow */
    flex-flow: row wrap;
-   /* tweak where items line
-      up on the row
-      valid values are: flex-start,
-      flex-end, space-between,
-      space-around, stretch */
-      align-content: flex-end;
-      margin-top: 0;
+   align-content: flex-end;
+   margin-top: 0;
 
     .col-grey {
       flex: 1;
@@ -85,6 +74,15 @@ main {
       width: 100%;
       border: 0px solid orange;
       padding: 20px;
+
+      a {
+        color: #ccc;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: #E84545;
+      }
     }
 
     .col-white {
@@ -135,6 +133,35 @@ main {
               position: relative;
             }
 
+            a {
+              position: relative;
+              color: #ccc;
+              text-decoration: none;
+
+              &:hover {
+                color: #ccc;
+              }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  z-index: 2;
+                  left: 0;
+                  right: 100%;
+                  bottom: -5px;
+                  background: #E84545;
+                  height: 2px;
+                  transition-property: left right;
+                  transition-duration: 0.1s;
+                  transition-timing-function: ease-out;
+                }
+
+                  &:hover:after,
+                  &:focus:after,
+                  &:active:after {
+                    right: 0;
+                  }
+            }
     }
 }
 
@@ -154,5 +181,4 @@ main {
     padding: 0px;
     margin: 0px;
   }
-
 }
