@@ -135,6 +135,13 @@ h1 {
     display: inline-block;
     animation: blink 0.5s linear infinite alternate; }
 
+@keyframes blink {
+  0% {
+    opacity: 0.3; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 h2 {
   color: #ccc;
   font-weight: lighter;
@@ -160,13 +167,6 @@ h3 {
     line-height: 0.5;
     color: #ccc; }
 
-@keyframes blink {
-  0% {
-    opacity: 0.3; }
-  50% {
-    opacity: 0.5; }
-  100% {
-    opacity: 1; } }
 p {
   font-family: 'Share Tech Mono', monospace;
   font-size: 17px;
@@ -188,6 +188,11 @@ p {
 .tech {
   color: #999; }
 
+@media only screen and (max-width: 768px) {
+  .title-box {
+    width: auto;
+    z-index: 1;
+    margin: 0 auto; } }
 .line1 {
   display: block;
   position: relative;
@@ -394,7 +399,7 @@ header {
   margin-top: 40px;
   display: block;
   overflow: hidden !important;
-  border: 1px solid red; }
+  border: 0px solid red; }
 
 .desktop-hidden {
   display: none; }

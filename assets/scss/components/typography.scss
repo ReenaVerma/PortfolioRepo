@@ -16,6 +16,12 @@ h1 {
   }
 }
 
+@keyframes blink {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
 h2 {
   color: #ccc;
   font-weight: lighter;
@@ -54,11 +60,6 @@ h3 {
 }
 
 
-@keyframes blink {
-  0% { opacity: 0.3; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
-}
 
 p {
   // font-family: 'Open Sans', sans-serif;
@@ -84,4 +85,15 @@ p {
 
 .tech {
   color: #999;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .title-box {
+    width: auto;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
 }
