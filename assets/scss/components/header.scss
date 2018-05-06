@@ -8,7 +8,6 @@ header {
 }
 
 .header-image {
-  // background-image: url(https://orig00.deviantart.net/96da/f/2015/202/3/2/red_city_by_kirokaze-d927ec2.png);
   background-image: url(/assets/images/futuristic_background.jpg);
   // background-image: url(https://media.giphy.com/media/5fBH6ziIYsfxeah3cBy/giphy.gif);
 
@@ -19,24 +18,18 @@ header {
   top: 0;
   left: 0;;
   z-index: 0;
-  /* Preserve aspet ratio */
   width: 100%;
   min-height: 90%;
   margin-top: 40px;
-  // margin: 0 auto;
   display: block;
   overflow:  hidden !important;
   border: 0px solid red;
 }
 
-// .header-mobile {
-//   display: none;
-// }
 
 .desktop-hidden {
   display: none;
 }
-
 
 @media only screen and (max-width: 768px) {
 
@@ -48,9 +41,7 @@ header {
     display: block;
   }
 
-
   header {
-    // height: 550px;
     justify-content: flex-start;
     top: 0;
     margin-top: 0px;
@@ -63,8 +54,5 @@ header {
     height: 680px;
     margin-top: 0px;
     z-index: 0;
-
-    // width: 768px;
   }
-
 }

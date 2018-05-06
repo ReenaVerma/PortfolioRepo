@@ -20,14 +20,12 @@ body {
 }
 
 main {
-  // min-height: 100vh; /* make sure wrapper is taller enough */
   overflow: hidden;
 }
 
 .container {
   padding: 20px 40px 20px 40px;;
   overflow-x: hidden;
-  // position:relative;
 }
 
 .section-white {
@@ -69,7 +67,6 @@ main {
 
     .col-grey {
       flex: 1;
-      // background-color: #1d1d1d;
       margin: 5px;
       width: 100%;
       border: 0px solid orange;
@@ -161,10 +158,9 @@ main {
                   &:active:after {
                     right: 0;
                   }
+                }
+              }
             }
-    }
-}
-
 
 @media only screen and (max-width: 768px) {
 

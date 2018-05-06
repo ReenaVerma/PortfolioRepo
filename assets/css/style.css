@@ -409,7 +409,6 @@ header {
   top: 0;
   left: 0;
   z-index: 0;
-  /* Preserve aspet ratio */
   width: 100%;
   min-height: 90%;
   margin-top: 40px;
@@ -450,7 +449,12 @@ header {
 .portfolio-image {
   display: block;
   height: auto;
-  width: 100%; }
+  width: 100%;
+  filter: gray;
+  /* IE5+ */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .4s ease-in-out; }
   .portfolio-image:hover {
     filter: none;
     -webkit-filter: grayscale(0);
@@ -494,15 +498,15 @@ header {
   max-width: 100%;
   max-height: 100vh;
   align-items: center; }
-  .card-image .card-content {
+  .card-image.card-content {
     background-color: white;
     padding: 1.5rem; }
-  .card-image .card-footer {
+  .card-image.card-footer {
     background-color: white;
     border-top: black;
     align-items: stretch;
     display: flex; }
-  .card-image .card-footer-item {
+  .card-image.card-footer-item {
     align-items: center;
     display: flex;
     flex-basis: 0;

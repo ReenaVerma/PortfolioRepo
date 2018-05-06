@@ -13,10 +13,10 @@ $radius-rounded: 290486px;
   display: block;
   height: auto;
   width: 100%;
-  // filter: gray; /* IE5+ */
-  // -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-  // -webkit-transition: all .4s ease-in-out;
-  //
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .4s ease-in-out;
+
     &:hover {
     filter: none;
       -webkit-filter: grayscale(0);
