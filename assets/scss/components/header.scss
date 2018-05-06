@@ -49,28 +49,16 @@ header {
   }
 
 
-  // .header-mobile {
-  //   background-image: url(/assets/images/futuristic_background.jpg);
-  //   background-position: center;
-  //   background-size: 100%;
-  //   position: absolute;
-  //   background-repeat: no-repeat;
-  //   z-index: 0;
-  //   width: 768px;
-  //   height: 300px;
-  //   margin-top: 200px;
-  //   display: block;
-  //   overflow:  hidden !important;
-  //   border: 0px solid red;
-  //
-  //   img {
-  //     z-index: 0;
-  //     /* Preserve aspet ratio */
-  //     width: 100%;
-  //     height: 100%;
-  //     margin-top: 100px;
-  //     display: block;
-  //   }
-  // }
+  header {
+    height: 490px;
+    justify-content: flex-start;
+    top: 0;
+    margin-top: 0px;
+  }
+
+  .header-image {
+    height: 100%;
+    margin-top: -60px;
+  }
 
 }
