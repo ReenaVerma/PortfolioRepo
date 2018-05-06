@@ -1,12 +1,12 @@
 a {
   position: relative;
-  color: #3A795C;
+  color: #ccc;
   text-decoration: none;
   // line-height: inherit;
   // word-spacing: 10px;
 
   &:hover {
-    color: #3A795C;
+    color: #ccc;
     // text-decoration: underline;
   }
 
@@ -17,7 +17,7 @@ a {
       left: 0;
       right: 100%;
       bottom: -5px;
-      background: #3A795C;
+      background: #ccc;
       height: 2px;
       transition-property: left right;
       transition-duration: 0.1s;
