@@ -377,7 +377,7 @@ header {
   height: 650px;
   width: 100%;
   overflow: hidden !important;
-  border: 1px solid red; }
+  border: 0px solid red; }
 
 .header-image {
   background-image: url(/assets/images/futuristic_background.jpg);
@@ -407,7 +407,6 @@ header {
     display: block; }
 
   header {
-    height: 550px;
     justify-content: flex-start;
     top: 0;
     margin-top: 0px;
@@ -415,8 +414,8 @@ header {
     z-index: 0; }
 
   .header-image {
-    background-image: url(/assets/images/header_mobile.jpg);
-    height: 550px;
+    background-image: url(/assets/images/background_mobile2.jpg);
+    height: 680px;
     margin-top: 0px;
     z-index: 0; } }
 .image {
