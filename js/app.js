@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   //TYPING FONT AFFECT FUNCTION
-  const message = 'reena verma <br> front-end developer';
+  const message = 'reena verma<br>front-end developer';
   const messageTwo = 'science fiction fan';
 
 
