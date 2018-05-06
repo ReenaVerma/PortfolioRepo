@@ -4,6 +4,7 @@ header {
   height: 650px;
   width: 100%;
   overflow: hidden !important;
+  border: 1px solid red;
 }
 
 .header-image {
@@ -28,11 +29,48 @@ header {
   border: 0px solid red;
 }
 
+// .header-mobile {
+//   display: none;
+// }
+
+.desktop-hidden {
+  display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
 
   .mobile-hidden {
-    // display: none;
+    display: none;
   }
+
+  .desktop-hidden {
+    display: block;
+  }
+
+
+  // .header-mobile {
+  //   background-image: url(/assets/images/futuristic_background.jpg);
+  //   background-position: center;
+  //   background-size: 100%;
+  //   position: absolute;
+  //   background-repeat: no-repeat;
+  //   z-index: 0;
+  //   width: 768px;
+  //   height: 300px;
+  //   margin-top: 200px;
+  //   display: block;
+  //   overflow:  hidden !important;
+  //   border: 0px solid red;
+  //
+  //   img {
+  //     z-index: 0;
+  //     /* Preserve aspet ratio */
+  //     width: 100%;
+  //     height: 100%;
+  //     margin-top: 100px;
+  //     display: block;
+  //   }
+  // }
 
 }

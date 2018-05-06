@@ -4,11 +4,11 @@ $color2: #53354A; //Plum
 $color3: #903749; //Maroon
 
 .navBar {
-  background-color: #000;
+  background-color: #fff;
   position: fixed;
   min-width: 100%;
   z-index: 2;
-  border-bottom: grey 1px solid;
+  border-bottom: #ccc 1px solid;
   padding: 30px 20px 0px 20px;
 }
 
@@ -43,11 +43,11 @@ nav {
     // float: right;
 
     a {
-      color: #ccc;
+      color: #666;
       text-decoration: none;
       transition: all .5s ease;
 
-      &:hover {color: #ccc}
+      &:hover {color: #E84545}
     }
   }
 
@@ -68,10 +68,14 @@ nav {
 
   @media only screen and (max-width: 768px) {
 
+    .navBar {
+      background-color: #000;
+    }
+
     nav {
       ul {
         a {
-          color: #ccc;
+          color: #666;
         }
       }
     }
@@ -104,7 +108,7 @@ nav {
     }
 
     .label-toggle {
-      background: linear-gradient(to bottom, #ccc 0%, #ccc 20%, transparent 20%, transparent 40%, #ccc 40%, #ccc 60%, transparent 60%, transparent 80%, #ccc 80%, #ccc 100%); //Gradient Hamburger
+      background: linear-gradient(to bottom, $color1 0%, $color1 20%, transparent 20%, transparent 40%, $color1 40%, $color1 60%, transparent 60%, transparent 80%, $color1 80%, $color1 100%); //Gradient Hamburger
       cursor: pointer;
       display: block;
       float: right;

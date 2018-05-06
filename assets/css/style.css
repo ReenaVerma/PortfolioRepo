@@ -281,7 +281,7 @@ a {
     left: 0;
     right: 100%;
     bottom: -5px;
-    background: #ccc;
+    background: #E84545;
     height: 2px;
     transition-property: left right;
     transition-duration: 0.1s;
@@ -290,11 +290,11 @@ a {
     right: 0; }
 
 .navBar {
-  background-color: #000;
+  background-color: #fff;
   position: fixed;
   min-width: 100%;
   z-index: 2;
-  border-bottom: grey 1px solid;
+  border-bottom: #ccc 1px solid;
   padding: 30px 20px 0px 20px; }
 
 .logo {
@@ -320,11 +320,11 @@ nav ul {
   list-style-type: none;
   width: 100%; }
   nav ul a {
-    color: #ccc;
+    color: #666;
     text-decoration: none;
     transition: all .5s ease; }
     nav ul a:hover {
-      color: #ccc; }
+      color: #E84545; }
 nav li {
   display: inline-block;
   margin-right: 25px; }
@@ -336,8 +336,10 @@ nav .wrapper {
   align-items: center;
   display: flex; }
 @media only screen and (max-width: 768px) {
+  nav .navBar {
+    background-color: #000; }
   nav nav ul a {
-    color: #ccc; }
+    color: #666; }
   nav ul {
     display: block;
     height: 0;
@@ -358,7 +360,7 @@ nav .wrapper {
     height: 50vh;
     visibility: visible; }
   nav .label-toggle {
-    background: linear-gradient(to bottom, #ccc 0%, #ccc 20%, transparent 20%, transparent 40%, #ccc 40%, #ccc 60%, transparent 60%, transparent 80%, #ccc 80%, #ccc 100%);
+    background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
     cursor: pointer;
     display: block;
     float: right;
@@ -374,7 +376,8 @@ header {
   margin-top: 0px;
   height: 650px;
   width: 100%;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  border: 1px solid red; }
 
 .header-image {
   background-image: url(/assets/images/futuristic_background.jpg);
@@ -393,6 +396,15 @@ header {
   overflow: hidden !important;
   border: 0px solid red; }
 
+.desktop-hidden {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .mobile-hidden {
+    display: none; }
+
+  .desktop-hidden {
+    display: block; } }
 .image {
   display: block;
   position: relative;
