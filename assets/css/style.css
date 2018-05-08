@@ -64,7 +64,7 @@ main {
     border: 0px solid orange;
     padding: 20px; }
     .flex-grid .col-grey a {
-      color: #ccc;
+      color: #999;
       text-decoration: underline; }
     .flex-grid .col-grey:hover {
       color: #E84545; }
@@ -106,10 +106,10 @@ main {
       position: relative; }
     .flex-grid .col-portfolio a {
       position: relative;
-      color: #ccc;
+      color: #999;
       text-decoration: none; }
       .flex-grid .col-portfolio a:hover {
-        color: #ccc; }
+        color: #E84545; }
       .flex-grid .col-portfolio a:after {
         content: "";
         position: absolute;

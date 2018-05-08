@@ -73,7 +73,7 @@ main {
       padding: 20px;
 
       a {
-        color: #ccc;
+        color: #999;
         text-decoration: underline;
       }
 
@@ -132,11 +132,11 @@ main {
 
             a {
               position: relative;
-              color: #ccc;
+              color: #999;
               text-decoration: none;
 
               &:hover {
-                color: #ccc;
+                color: #E84545;
               }
 
                 &:after {
