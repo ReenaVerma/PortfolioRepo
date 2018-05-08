@@ -305,7 +305,10 @@ p {
   height: 45px;
   margin: 1em 0;
   width: 45px;
-  border: grey 0px solid; }
+  border: grey 0px solid;
+  text-align: center;
+  color: #fff;
+  padding: 11px; }
   .logo:hover {
     text-decoration: none; }
   .logo:active {
