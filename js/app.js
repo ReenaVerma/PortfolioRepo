@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //HEADER BACKGROUND ANIMATION
   const header = document.getElementById('header');
-  const windowWidth = window.innerWidth / 0;
+  const windowWidth = window.innerWidth / 1;
   const windowHeight = window.innerHeight / 5 ;
 
   header.addEventListener('mousemove', (e) => {

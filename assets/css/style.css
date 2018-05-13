@@ -106,7 +106,7 @@ main {
       position: relative; }
     .flex-grid .col-portfolio a {
       position: relative;
-      color: #999;
+      color: #E84545;
       text-decoration: none; }
       .flex-grid .col-portfolio a:hover {
         color: #E84545; }
@@ -188,7 +188,7 @@ p {
   font-size: 17px;
   color: #ccc;
   text-align: center;
-  text-align: justify; }
+  text-align: left; }
 
 .caps {
   text-transform: uppercase;
