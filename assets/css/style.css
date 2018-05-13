@@ -455,7 +455,7 @@ header {
   width: 100%;
   filter: gray;
   /* IE5+ */
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(0);
   /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all .4s ease-in-out; }
   .portfolio-image:hover {

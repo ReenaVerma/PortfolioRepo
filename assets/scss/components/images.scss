@@ -14,7 +14,7 @@ $radius-rounded: 290486px;
   height: auto;
   width: 100%;
   filter: gray; /* IE5+ */
-  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-filter: grayscale(0); /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all .4s ease-in-out;
 
     &:hover {
