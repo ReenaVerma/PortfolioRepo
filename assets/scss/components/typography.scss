@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: #ccc;
+  color: #fff;
   font-weight: lighter;
   text-align: center;
   text-transform: lowercase;
@@ -47,6 +47,8 @@ h3 {
   position:  relative;
   top: 30%;
   z-index: 1;
+  background-color: rgba(0,0,0,0.4);
+  padding-bottom: 5px;
 
   h2 {
       font-size: 20px;
@@ -70,7 +72,7 @@ p {
   list-style: none;
   text-align: center;
   font-size: 14px;
-  padding: 0;
+  // padding: 0;
   color: #666;
 }
 
