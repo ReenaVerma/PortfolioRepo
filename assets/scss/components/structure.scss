@@ -57,7 +57,7 @@ main {
 
 .flex-grid {
   display: flex;
-   align-items: center;
+   // align-items: center;
    justify-content: center;
    flex-direction: row;
    flex-wrap: wrap;
@@ -94,7 +94,7 @@ main {
 
 
     .col-white-small {
-      flex: 0.3 0 0;
+      flex: 1;
       background-color: #fff;
       margin-top: 0px;
       width: 100%;
