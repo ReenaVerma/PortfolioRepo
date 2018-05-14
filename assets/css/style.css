@@ -177,11 +177,14 @@ h3 {
   margin: 0 auto;
   position: relative;
   top: 30%;
-  z-index: 1; }
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 5px;
+  height: 190px; }
   .title-box h2 {
     font-size: 20px;
     line-height: 0.5;
-    color: #ccc; }
+    color: #fff; }
 
 p {
   font-family: 'Share Tech Mono', monospace;
@@ -195,7 +198,6 @@ p {
   list-style: none;
   text-align: center;
   font-size: 14px;
-  padding: 0;
   color: #666; }
 
 .fas {
@@ -209,7 +211,8 @@ p {
     width: auto;
     z-index: 1;
     margin: 0 auto;
-    margin-left: 0px; } }
+    margin-left: 0px;
+    height: auto; } }
 .line1 {
   display: block;
   position: relative;

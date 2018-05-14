@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #ccc;
   font-weight: lighter;
   text-align: center;
   text-transform: lowercase;
@@ -49,11 +49,12 @@ h3 {
   z-index: 1;
   background-color: rgba(0,0,0,0.4);
   padding-bottom: 5px;
+  height: 190px;
 
   h2 {
       font-size: 20px;
         line-height: 0.5;
-        color: #ccc;
+        color: #fff;
       }
 }
 
@@ -91,5 +92,6 @@ p {
     z-index: 1;
     margin: 0 auto;
     margin-left: 0px;
+    height: auto;
   }
 }
