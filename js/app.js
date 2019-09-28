@@ -8,15 +8,12 @@ window.addEventListener('DOMContentLoaded', () => {
   header.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX / windowWidth;
     const mouseY = e.clientY / windowHeight;
-
     header.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
   });
-
 
   //TYPING FONT AFFECT FUNCTION
   const message = 'reena verma<br>front-end developer';
   const messageTwo = 'science fiction fan';
-
 
   // TYPING H1 TITLE FUNCTION
   const title = () => {
@@ -35,7 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   };
-
 
   // TYPING SUBTITLE FUNCTION
   const subTitle = () => {
@@ -75,6 +71,4 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-
 });
